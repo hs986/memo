@@ -1,4 +1,3 @@
-version: '3.8'
 services:
   user-service:
     build: ./user-service
@@ -27,6 +26,13 @@ services:
       - memo-net
     environment:
       - MONGO_URI=mongodb://mongo:27017/memo-service
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:3000"
+    networks:
+      - memo-net
 
   mongo:
     image: mongo:latest

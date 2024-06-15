@@ -9,7 +9,7 @@ import SearchMemos from './components/SearchMemos';
 const App = () => {
   return (
     <Router>
-      <div>
+      <div className="container">
         <Switch>
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
