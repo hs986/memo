@@ -1,0 +1,15 @@
+{
+    "name": "memo-service",
+    "version": "1.0.0",
+    "description": "Memo service for handling memo creation, update, deletion and retrieval",
+    "main": "src/index.js",
+    "scripts": {
+      "start": "node src/index.js"
+    },
+    "dependencies": {
+      "dotenv": "^10.0.0",
+      "express": "^4.17.1",
+      "mongoose": "^5.12.3"
+    }
+  }
+  
